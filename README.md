@@ -1,2 +1,0 @@
-# Zachareyli.github.io
-Projects
