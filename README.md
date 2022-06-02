@@ -1,5 +1,4 @@
-# Zachareyli.github.io
-Projects 
+#Zachareyli Projects
 
 Literally Making Projects 
 
