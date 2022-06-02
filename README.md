@@ -1,4 +1,6 @@
 # Zachareyli.github.io
-Projects
+Projects 
+
 Literally Making Projects 
+
 AND ALWAYS HAVING FUN WITH THE CODE!!
