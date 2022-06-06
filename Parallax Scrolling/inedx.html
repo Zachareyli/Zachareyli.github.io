@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Parallax Scrolling</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">NASA</a>
+         <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="./img/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg" id="space">
+        <h2 id="titleOne">Welcome To NASA</h2>
+        <img src="./img/moon.png" id="moon_behind">
+    </section>
+    <div class="sec">
+        <h2><br>cont<br><br></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magni possimus ipsa sapiente dolore accusantium aliquid fuga. Accusantium minima, rem quibusdam quisquam repudiandae, doloribus rerum aut asperiores dolorum laborum soluta.<br><br>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi explicabo deleniti pariatur ad sint, corrupti, repellendus neque delectus rem reiciendis sunt necessitatibus? Quisquam corrupti id perspiciatis magnam accusantium, ab voluptates.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa non dolores inventore rerum repudiandae. Quibusdam, tempore adipisci nesciunt temporibus inventore ipsum dolor saepe nobis maxime aperiam sed consectetur eveniet. Perferendis.</p>
+    </div>
+
+    <br>
+    <hr>
+
+    <div class="row">
+        <div class="side">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex itaque pariatur in animi, ipsam quidem obcaecati dolor omnis asperiores expedita libero harum corrupti atque quos excepturi molestiae dolores dicta ab.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nisi neque laborum maiores ipsa nemo aliquid obcaecati repellat voluptatum aut excepturi dolores, eligendi perspiciatis, similique reprehenderit magnam ab porro culpa?<br>
+            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nobis, magnam dolore nemo culpa corrupti a labore molestiae impedit praesentium tempore dolores quod voluptatibus! In eveniet assumenda maiores corporis ex?
+        </p>
+        </div>
+        <div class="side"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illo ipsum neque corporis possimus nobis sint cumque quis velit temporibus fuga aperiam quaerat inventore natus. Dolore laudantium dolores iure eveniet?
+            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit harum maxime! Facilis at odit eveniet ipsam nemo pariatur repellendus voluptas quibusdam adipisci ipsa, sit dolorum a quod dolorem! Cupiditate!
+        </p></div>
+        <div class="side"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illo ipsum neque corporis possimus nobis sint cumque quis velit temporibus fuga aperiam quaerat inventore natus. Dolore laudantium dolores iure eveniet?
+            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi magnam id quas dolorem optio veniam expedita recusandae deserunt nulla sunt odit, iste aspernatur dolorum, aperiam explicabo deleniti dignissimos inventore!
+        </p></div>
+    </div>
+
+    <script>
+        let moon = document.getElementById('moon_behind');
+        // let space = document.getElementById('space');
+        let header = document.querySelector('header');
+        let headingOne = document.getElementById('titleOne');
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            // space.style.left = value * 0.5 + 'px';
+            moon.style.top = value + 'px';
+            headingOne.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 1.5 + 'px;'
+        });
+
+
+
+    </script>
+</body>
+</html>
