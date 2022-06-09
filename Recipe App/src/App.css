@@ -1,0 +1,87 @@
+*{
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+.container{
+  background-color: whitesmoke;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 40px auto;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+h1{
+  text-align: center;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+input{
+  border: 1px solid orange;
+  padding: 10px;
+  font-size: 1rem;
+
+}
+
+input:focus{
+  outline: none;
+
+}
+
+.form-control{
+  border-radius: 10px;
+  width: 500px;
+}
+
+.btn{
+    border-radius: 10px;
+}
+
+.recipes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
+  /* flex-direction: column; */
+}
+
+.card{
+  width: 300px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-body{
+  padding: 10px;
+  text-align: center;
+}
+
+.category{
+  color: orangered;
+  /* border-radius: 20px; */
+
+}
+
+a{
+  background-color: orange;
+  color: inherit;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
