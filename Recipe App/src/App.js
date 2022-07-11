@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import RecipeCard from './components/RecipeCard';
+import {Helmet} from "react-helmet";
 
 
 const apiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
@@ -34,6 +35,11 @@ function App() {
   };
 
   return (
+    <>
+    <Helmet>
+        <title>Clayton's Recipe App</title>
+        <meta name="description" content="Helmet application" />
+    </Helmet>
     <div className="container">
       <h1>Clayton's Recipe App</h1>
       <SearchBar
@@ -52,6 +58,7 @@ function App() {
         : 'No Recipes!'}  
       </div>
     </div>
+    </>
   );
 };
   
