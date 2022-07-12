@@ -25,9 +25,13 @@ function App() {
     setIsLoading(false);
   };
 
+// Use effect fires as soon as webpage loads to show recipes
+
   useEffect(() =>{
     searchRecipes()
   }, []);
+
+  // preventDefault() prevents the form from submitting
 
   const handleSubmit = event => {
     event.preventDefault()
@@ -55,7 +59,7 @@ function App() {
               recipe={recipe}
             />
         ))
-        : 'No Recipes!'}  
+        : 'Sorry... We\'ve Found No Recipes!'}  
       </div>
     </div>
     </>
