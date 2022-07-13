@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: black;
+    min-height: 200vh;
+    padding-top: 30px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 50px 100px;
+    z-index: 10;
+    /* background: #000; */
+}
+
+header.sticky{
+    padding: 40px 100px;
+    background: white;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.6;
+    font-weight: 500px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 250vh;
+    background: url(./img/code.jpg);
+    background-size: cover;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+    /* background: whitesmoke; */
+}
+
+.grid{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 30px;
+    align-items: center;
+    padding: 10%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid > article{
+    background: white;
+    border: none;
+    box-shadow: 2px 2px 6px 0px black;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform .3s;
+}
+
+.grid > article:hover{
+transform: translate(5px);
+box-shadow: 2px 2px 26px 0px grey;
+}
+
+.grid > article img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text button{
+    background: orange;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer
+}
+
+button{
+    padding: 5%;
+    font-size: 1rem;
+    margin: 5%;
+}
+
+.size{
+    height: 400px;
+    width: 300px;
+}
+
+@media screen and (max-width: 900px) {
+    .grid {   
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }
+
+  .heading {
+
+    /* font-size: 5vw;
+    color: yellow; */
+    /* background-color: lightblue; */
+    animation: alternate;
+    animation-duration: 1s;
+    animation-name: heading1;
+    animation-iteration-count: infinite;
+    /* padding: 20px; */
+    /* width: auto; */
+    
+    /* background: transparent; */
+}
+
+@keyframes heading1 {
+   from{
+text-shadow: 0px 0px 15px yellow;
+}
+
+to{
+    text-shadow: 5px 1px red;
+}
+}
