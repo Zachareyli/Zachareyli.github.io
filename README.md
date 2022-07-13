@@ -1,5 +1,1 @@
-#Zachareyli Projects
-
-Literally Making Projects 
-
-AND ALWAYS HAVING FUN WITH THE CODE!!
+# All projects Ive worked on
