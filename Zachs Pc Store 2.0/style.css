@@ -5,13 +5,14 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: black;
-    min-height: 200vh;
+    background: transparent;
+    min-height: 0vh;
     padding-top: 30px;
 }
 
 header{
     position: fixed;
+    height: 20px;
     top: 0;
     left: 0;
     width: 100%;
@@ -19,14 +20,14 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 50px 100px;
+    padding: 40px 100px;
     z-index: 10;
     /* background: #000; */
 }
 
 header.sticky{
     padding: 40px 100px;
-    background: white;
+    background: black;
 }
 
 header .logo{
@@ -34,10 +35,18 @@ header .logo{
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6;
+}
+@media screen and (max-width: 480px) {
+    header .logo{
+    font-weight: 0;
+    font-size: 0.5rem;
+    position: fixed;
+    left: 0;
+}
 }
 
 header ul{
@@ -50,17 +59,29 @@ header ul{
 header ul li{
     position: relative;
     list-style: none;
+    margin-left: 10px;;
 }
 
 header ul li a{
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: white;
+    color: black;
     letter-spacing: 2px;
     transition: 0.6;
     font-weight: 500px;
+    font-size: 1rem;
+}   
+@media screen and (max-width: 480px) {
+    header ul li a{
+    font-weight: 0;
+    margin: 0 2px;
+    letter-spacing: 0px;
+    font-size: 10px;
+    display: flex;
 }
+}
+
 
 .banner{
     position: relative;
@@ -69,22 +90,31 @@ header ul li a{
     background: url(./img/code.jpg);
     background-size: cover;
 }
+@media screen and (max-width: 768px) {
+    .banner{
+    height: 500vh
+}
+}
+
 
 header.sticky .logo,
 header.sticky ul li a {
-    color: #000;
+    color: white;
     /* background: whitesmoke; */
 }
 
 .grid{
-    margin-top: 10%;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     grid-gap: 30px;
     align-items: center;
-    padding: 10%;
+    padding-top: 5%;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* margin: 0 auto; */
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .grid > article{
@@ -95,6 +125,7 @@ header.sticky ul li a {
     text-align: center;
     width: 300px;
     transition: transform .3s;
+    padding: 10px;
 }
 
 .grid > article:hover{
@@ -153,9 +184,11 @@ button{
 @keyframes heading1 {
    from{
 text-shadow: 0px 0px 15px yellow;
+color: black;
 }
 
 to{
     text-shadow: 5px 1px red;
+    color: black;
 }
 }
