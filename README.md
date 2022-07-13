@@ -1,3 +1,1 @@
-#Zachareyli Projects
-
-Projects Which Ive worked on
+# Go to projects branch to see all projects
